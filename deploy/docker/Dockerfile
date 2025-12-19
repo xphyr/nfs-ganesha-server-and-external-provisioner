@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Update only after new version of deploy/base/Dockerfile change has built
-ARG GANESHA_VERSION=V6.5
-ARG GH_ORGANIZATION=kubernetes-sigs
+ARG GANESHA_VERSION=V8.1
+ARG GH_ORGANIZATION=xphyr
 
 FROM ghcr.io/${GH_ORGANIZATION}/nfs-ganesha:${GANESHA_VERSION}
 

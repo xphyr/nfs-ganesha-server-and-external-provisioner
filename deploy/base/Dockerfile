@@ -18,7 +18,7 @@
 #       arm64 architectures.
 #
 # List of Fedora versions: https://en.wikipedia.org/wiki/Fedora_version_history#Version_history
-ARG FEDORA_VERSION=41
+ARG FEDORA_VERSION=43
 
 FROM registry.fedoraproject.org/fedora:${FEDORA_VERSION} AS build
 
@@ -49,7 +49,7 @@ RUN dnf install -y \
 
 # Clone specific version of ganesha
 # Keep version in sync with .github/workflows/docker-build.yml
-ARG GANESHA_VERSION=V6.5
+ARG GANESHA_VERSION=V8.1
 RUN git clone --branch ${GANESHA_VERSION} --recurse-submodules https://github.com/nfs-ganesha/nfs-ganesha
 WORKDIR /nfs-ganesha
 
