@@ -18,6 +18,8 @@
 #       arm64 architectures.
 #
 # List of Fedora versions: https://en.wikipedia.org/wiki/Fedora_version_history#Version_history
+
+# Build Date 2025-12-19
 ARG FEDORA_VERSION=43
 
 FROM registry.fedoraproject.org/fedora:${FEDORA_VERSION} AS build
